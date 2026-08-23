@@ -1,0 +1,128 @@
+skill-grid {
+  margin: 8rem 0;
+}
+
+.skill-box {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+
+  background-color: rgba(9, 253, 241, 1);
+  border-radius: 4px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: rgba(9, 253, 241, 1);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 0.1rem;
+    filter: blur(0.3rem);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.skill img {
+  width: 80%;
+  aspect-ratio: 1/1;
+}
+
+.skill-bar {
+  grid-column: span 4; /* Makes each skill bar take up 4 columns */
+  width: 100%; /* Full width within its grid area */
+  text-align: left;
+
+  @media (max-width: 1200px) {
+    grid-column: span 3;
+  }
+
+  @media (max-width: 900px) {
+    grid-column: span 2;
+  }
+
+  @media (max-width: 600px) {
+    grid-column: span 3;
+  }
+
+  @media (max-width: 480px) {
+    grid-column: span 2;
+  }
+
+  @media (max-width: 400px) {
+    grid-column: span 1;
+  }
+}
+
+.skill-bar p {
+  margin: 5px 0;
+  font-size: 2rem;
+}
+.skill-bar .bar {
+  height: 10px;
+  background: #0697903f;
+  border-radius: 5px;
+  position: relative;
+}
+
+.skill-bar .bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(to right, #06979034, #09fdf1); /* Fixed */
+  border-radius: 5px;
+}
+
+.grad-container {
+  position: relative;
+  // display: inline-block;
+  padding: 8rem 4rem;
+  border-radius: 15px;
+  // color: white; /* Ensure content is visible */
+  // font-size: 18px;
+  // text-align: center;
+  background-color: transparent; /* Transparent background */
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: double 3px transparent;
+    border-radius: inherit;
+    padding: 5px; /* Adjusts the border thickness */
+
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(9, 253, 241, 1) 0%,
+      rgba(2, 49, 47, 0) 30%,
+      rgba(30, 30, 30, 0) 70%,
+      rgba(6, 151, 144, 1) 100%
+    );
+
+    background-origin: border-box;
+    background-clip: border-box;
+
+    /* Creates the transparent inside effect while keeping content visible */
+    -webkit-mask: linear-gradient(#000 0 0) padding-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+
+    z-index: -1; /* Moves it behind the text */
+  }
+}

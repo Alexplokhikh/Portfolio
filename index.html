@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/icons/plokhikh-logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/src/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="grain"></div>
+
+    <!-- 🔹 Header (Navigation) -->
+    <header class="header">
+
+        <a href="#" class="logo">
+          <img class="logo__img" src="/icons/plokhikh-logo.svg" alt="logo" />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#about">About</a></li>
+            <li><a class="main-nav-link" href="#skills">Skills</a></li>
+            <li><a class="main-nav-link" href="#projects">Projects</a></li>
+            <li><a class="main-nav-link nav-cta" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+    </header>
+
+    <main>
+      <!-- 🔹 Hero Section -->
+      <section class="section section__home" id="section-home">
+        <div class="hero">
+          <div class="greet">
+            <p class="greet-message">
+              <span class="hello"><strong>hello,</strong></span> my name is
+              <br />
+            </p>
+            <strong class="alex"> &lt;Alexei/&gt;</Alexei.></strong>
+            <p class="smaller"> ux ui designer &amp; full stack developer </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔹 About Section -->
+      <section class="section section__about" id="about">
+        <div class="container container--about">
+          <div class="grid grid--2-col">
+            <div class="about__content">
+              <h2 class="about__heading">About me</h2>
+              <p class="about__name">I’m <strong>Alexei.</strong></p>
+              <div class="about__text">
+                <p class="about__text--paragraph">I'm a passionate designer and a dedicated developer based in Israel.
+                  Specializing in crafting dynamic and responsive web applications and backend systems.</p>
+                <p class="about__text--paragraph">Always eager to learn, adapt, and take on new challenges.
+                  I bring ideas to life with clean code and innovative solutions. </p>
+                <p class="about__text--paragraph">I specialize in creating robust, user-friendly applications, with a focus on clean, efficient code. </p>
+                <p class="about__text--paragraph">With a strong foundation in programming, and a passion for continuous learning, 
+                  I bring innovative solutions to the table.</p>
+              </div>
+              <div class="btn--container">
+                <a class="btn--cta" href="cv.pdf" target="_blank">CV</a>
+              </div>
+            </div>
+            <img class="about--img mobile-hidden" src="/img/img-alex.png" alt="Alexei's Photo" />
+          </div>
+        </div>
+      </section>
+      
+            <!-- 🔹 Skills Section -->
+      <section class="section section__skills " id="skills">
+        <div class="container container--skills">
+          <h2 class="heading-secondary">Skills</h2>
+          <div class="grad-container">
+            <div class="grid--8-col">
+              
+            <!-- Tech Stack Icons -->
+              <div class="skill-box">
+              <div class="skill"><img src="/icons/html-icon.svg" alt="HTML" /></div>
+              <p class="skill--name">HTML</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/css-icon.svg" alt="CSS" /></div>
+              <p class="skill--name">CSS</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/sass-icon-round.svg" alt="SASS" /></div>
+              <p class="skill--name">SASS</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/js-icon.svg" alt="JavaScript" /></div>
+              <p class="skill--name">JavaScript</p>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/typescript-icon.svg" alt="TypeScript" /></div>
+              <p class="skill--name">TypeScript</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/react-icon.svg" alt="React" /></div>
+              <p class="skill--name">React</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/redux-icon.svg" alt="Redux" /></div>
+              <p class="skill--name">Redux</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/nextjs-fill-icon.svg" alt="Next.js" /></div>
+              <p class="skill--name">Next.js</p>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/figma-icon.svg" alt="Figma" /></div>
+              <p class="skill--name">Figma</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/photoshop-icon.svg" alt="Photoshop" /></div>
+              <p class="skill--name">Photoshop</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/node-icon.svg" alt="node.js" /></div>
+              <p class="skill--name">Node.js</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/express-icon.svg" alt="Express.js" /></div>
+              <p class="skill--name">Express.js</p>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/mongodb-icon.svg" alt="mongoDB" /></div>
+              <p class="skill--name">MongoDB</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/postgresql-icon.svg" alt="PostgreSQL" /></div>
+              <p class="skill--name">PostgreSQL</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/mysql-dolphin-icon.svg" alt="MySQL" /></div>
+              <p class="skill--name">MySQL</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/git-icon.svg" alt="GIT" /></div>
+              <p class="skill--name">GIT</p>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/docker-icon.svg" alt="Docker" /></div>
+              <p class="skill--name">Docker</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/kubernetes-icon.svg" alt="Kubernetes" /></div>
+              <p class="skill--name">Kubernetes</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/aws-icon.svg" alt="AWS" /></div>
+              <p class="skill--name">AWS</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/terraform-icon.svg" alt="Terraform" /></div>
+              <p class="skill--name">Terraform</p>
+            </div>
+
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/prometheus-icon.svg" alt="Prometheus" /></div>
+              <p class="skill--name">Prometheus</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/grafana-icon.svg" alt="Grafana" /></div>
+              <p class="skill--name">Grafana</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/centos-icon.svg" alt="CentOS" /></div>
+              <p class="skill--name">CentOS</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill"><img src="/icons/ubuntu-icon.svg" alt="Ubuntu" /></div>
+              <p class="skill--name">Ubuntu</p>
+            </div>
+
+              <!-- Soft Skill Bars -->
+
+                <div class="skill-bar">
+                  <p>UI & Web Design</p>
+                  <div class="bar"><span style="width: 85%"></span></div>
+                </div>
+                <div class="skill-bar">
+                  <p>Web Development</p>
+                  <div class="bar"><span style="width: 95%"></span></div>
+                </div>
+                <div class="skill-bar">
+                  <p>Responsive Layouts</p>
+                  <div class="bar"><span style="width: 95%"></span></div>
+                </div>
+                <div class="skill-bar">
+                  <p>Mobile Adaptability</p>
+                  <div class="bar"><span style="width: 90%"></span></div>
+                </div>
+                <div class="skill-bar">
+                  <p>Drinking Coffee</p>
+                  <div class="bar"><span style="width: 100%"></span></div>
+                </div>
+                <div class="skill-bar">
+                  <p>Learn Motivation</p>
+                  <div class="bar"><span style="width: 100%"></span></div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 🔹 Projects Section -->
+      <section class="section section__projects " id="projects">
+        <div class="container">
+          <h2 class="heading-secondary">Projects</h2>
+          <div class="grad-container grid--3-col">
+
+            <!-- PROJECT CARDS -->
+            <div class="card grad-background">
+                <img src="/img/forkify.png" alt="Forkify" class="img--project">
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/html-icon.svg" alt="HTML" />
+                  <img class="icon--project" src="/icons/css-icon.svg" alt="CSS" />
+                  <img class="icon--project" src="/icons//js-icon.svg" alt="JavaScript" />
+                </div>
+                <h3 class="title">Forkify</h3>
+                <p class="project-description">
+                  Forkify is a recipe <strong>web app</strong> that allows users to search, view, modify, bookmark and add recipes.
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://plokhikh-forkify.netlify.app/" target="_blank">Live</a>
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/Forkify" target="_blank">Source</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card grad-background">
+
+                <img src="/img/nexter.png" alt="Nexter" class="img--project">
+
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/html-icon.svg" alt="HTML" />
+                  <img class="icon--project" src="/icons/css-icon.svg" alt="CSS" />
+                  <img class="icon--project" src="/icons/sass-icon.svg" alt="SASS" />
+                </div>
+                <h3 class="title">Nexter</h3>
+                <p class="project-description">
+                  Nexter is a real estate agency mockup website.
+                  a <strong>Front-end project</strong> with a CSS Grid Responsive Layout.
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://alexplokhikh.github.io/Nexter/" target="_blank">Live</a>
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/Nexter" target="_blank">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card grad-background">
+
+                <img src="/img/trillo.png" alt="Trillo" class="img--project">
+
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/html-icon.svg" alt="HTML" />
+                  <img class="icon--project" src="/icons/css-icon.svg" alt="CSS" />
+                  <img class="icon--project" src="/icons/sass-icon.svg" alt="SASS" />
+                </div>
+                <h3 class="title">Trillo</h3>
+                <p class="project-description">
+                  A hotel-booking <strong>Front-end project</strong>. <br/> a responsive flexbox Layout
+                  Completed with HTML & CSS (SASS)
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://alexplokhikh.github.io/Trillo/" target="_blank">Live</a>
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/Trillo" target="_blank">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card grad-background">
+
+                <img src="/img/natours.png" alt="Natours" class="img--project">
+
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/html-icon.svg" alt="HTML" />
+                  <img class="icon--project" src="/icons/css-icon.svg" alt="CSS" />
+                  <img class="icon--project" src="/icons/sass-icon.svg" alt="SASS" />
+                </div>
+                <h3 class="title">Natours</h3>
+                <p class="project-description">
+                  A Tour-booking <strong>Front-end project</strong>,
+                  with cool animations and design components.
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://alexplokhikh.github.io/Natours/" target="_blank">Live</a>
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/Natours" target="_blank">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card grad-background">
+
+                <img src="/img/kira.png" alt="Kira" class="img--project">
+
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/figma-filled-icon.svg" alt="Figma"/>
+                  <img class="icon--project" src="/icons/html-icon.svg" alt="HTML" />
+                  <img class="icon--project" src="/icons/css-icon.svg" alt="CSS" />
+                  <img class="icon--project" src="/icons/sass-icon.svg" alt="SASS" />
+                </div>
+                <h3 class="title">Kira</h3>
+                <p class="project-description">
+                  Kira is a restaurant landing-page, <br/>
+                  my first <strong>Design - to - frontend</strong> and Hebrew (right to left) attempts.
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://alexplokhikh.github.io/Kira/" target="_blank">Live</a>
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/Kira" target="_blank">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card grad-background">
+
+                <img src="/img/omnifood-responsive.png" alt="Omnifood" class="img--project">
+
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/html-icon.svg" alt="HTML" />
+                  <img class="icon--project" src="/icons/css-icon.svg" alt="CSS" />
+                  <img class="icon--project" src="/icons/js-icon.svg" alt="Javascript"/>
+                </div>
+                <h3 class="title">Omnifood</h3>
+                <p class="project-description">
+                  A Fictional Food Delivery Company, <br/>
+                  <strong>Responsive Layout</strong> Static website frontend. 
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://alexplokhikh.github.io/Omnifood/" target="_blank">Live</a>
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/Omnifood" target="_blank">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card grad-background">
+
+                <img src="/img/devops-namegen.png" alt="DevOps Name Generator" class="img--project">
+
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/docker-icon.svg" alt="Docker"/>
+                  <img class="icon--project" src="/icons/kubernetes-icon.svg" alt="Kubernetes"/>
+                  <img class="icon--project" src="/icons/aws-icon.svg" alt="AWS"/>
+                  <img class="icon--project" src="/icons/github-actions.svg" alt="GitHub Actions"/>
+                  <img class="icon--project" src="/icons/mongodb-icon.svg" alt="MongoDB"/>
+                  <img class="icon--project" src="/icons/terraform-icon.svg" alt="Terraform"/>
+                  <img class="icon--project" src="/icons/prometheus-icon.svg" alt="Prometheus"/>
+                  <img class="icon--project" src="/icons/grafana-icon.svg" alt="Grafana"/>
+                </div>
+                <h3 class="title">DevOps Name Generator</h3>
+                <p class="project-description">
+                  Production-style DevOps deployment of a <strong>Node.js + MongoDB</strong> app on <strong>AWS EKS</strong>, using <strong>Terraform</strong>, <strong>Docker</strong>, <strong>GitHub Actions CI/CD</strong>, persistent storage and <strong>Prometheus/Grafana</strong> monitoring. <br/>
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/devops-namegen" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card grad-background">
+
+                <img src="/img/devops-pacman.png" alt="DevOps Pacman" class="img--project">
+
+              <div class="content-container">
+                <div class="tech-icons">
+                  <img class="icon--project" src="/icons/docker-icon.svg" alt="Docker"/>
+                  <img class="icon--project" src="/icons/kubernetes-icon.svg" alt="Kubernetes"/>
+                  <img class="icon--project" src="/icons/aws-icon.svg" alt="AWS"/>
+                  <img class="icon--project" src="/icons/github-actions.svg" alt="GitHub Actions"/>
+                  <img class="icon--project" src="/icons/mongodb-icon.svg" alt="MongoDB"/>
+                  <img class="icon--project" src="/icons/terraform-icon.svg" alt="Terraform"/>
+                  <img class="icon--project" src="/icons/prometheus-icon.svg" alt="Prometheus"/>
+                  <img class="icon--project" src="/icons/grafana-icon.svg" alt="Grafana"/>
+                </div>
+                <h3 class="title">DevOps Pacman</h3>
+                <p class="project-description">
+                  Classic Pac-Man app <strong>containerized</strong> and deployed on <strong>AWS EKS</strong> with <strong>Terraform</strong>, automated <strong>GitHub Actions CI/CD</strong>, persistent <strong>MongoDB</strong> storage and <strong>Prometheus/Grafana</strong> observability. <br/>
+                </p>
+                <div class="buttons-box">
+                  <a class="btn btn--project" href="https://github.com/Alexplokhikh/devops-pacman" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔹 Contact Section -->
+      <section class="section section__contact " id="contact">
+        <h2 class="heading-secondary u-margin-bottom-medium">Contact Me</h2>
+        <div class="container">
+          <div class="contact__text-box">
+            <p class="contact-text">
+              Send me an email if you would like to work with me!
+            </p>
+          </div>
+          <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+              <input type="hidden" name="access_key" value="f3470edd-8d45-4938-871b-55819dcb7882">
+              <input class="contact__form--input" type="text" name="name" id="name" placeholder="Your Name" required />
+              <label class="contact__form--label" for="name">Full name</label>
+              <input class="contact__form--input" type="email" name="email" id="email" placeholder="Your Email" required />
+              <label class="contact__form--label" for="email">Email address</label>
+              <textarea
+                class="contact__form--textarea"
+                name="message"
+                id="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button class="btn btn--send" type="submit">Get in touch</button>
+              <p id="status-message"></p>
+            </form>
+            <div class="img--container">
+              <img class="logo__img--contact sm-mobile--hidden" src="../icons/plokhikh-logo.svg" alt="logo">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="mobile-hidden aside-wrap">
+        <p class="aside__wrap--text"><a href="mailto:alexei96pl@gmail.com" class="aside__link--email">alexei96pl@gmail.com</a></p>
+           <span class="aside__dash"></span>
+           <ul class="aside__wrap--inner">
+            <li class="aside__link"><a href="https://github.com/Alexplokhikh"><ion-icon name="logo-github" class="aside__link--icon"></ion-icon>
+            </a></li>
+            <li class="aside__link"><a href="https://codepen.io/Alex-Plokhikh-the-builder"><ion-icon name="logo-codepen" class="aside__link--icon"></ion-icon></a></li>
+            <li class="aside__link"><a href="https://www.linkedin.com/in/alexei-plokhikh-772156230/"><ion-icon name="logo-linkedin" class="aside__link--icon"></ion-icon></a></li>
+        </aside>
+
+      <!-- 🔹 Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <p>&copy; 2025 Alexei Plokhikh.</p>
+            <p class="mobile-hidden">All rights reserved.</p>
+
+              <a href="#" class="mobile-shown footer--email">alexei96pl@gmail.com</a>
+              <ul class="mobile-shown footer__links">
+               <li class="footer__link"><a href="https://github.com/Alexplokhikh"><ion-icon name="logo-github" class="footer__link--icon"></ion-icon>
+               </a></li>
+               <li class="footer__link"><a href="https://codepen.io/Alex-Plokhikh-the-builder"><ion-icon name="logo-codepen" class="footer__link--icon"></ion-icon></a></li>
+               <li class="footer__link"><a href="https://www.linkedin.com/in/alexei-plokhikh-772156230/"><ion-icon name="logo-linkedin" class="footer__link--icon"></ion-icon></a></li>
+            </div>
+
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

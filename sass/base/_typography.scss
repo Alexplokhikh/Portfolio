@@ -1,0 +1,22 @@
+/*
+--- TYPOGRAPHY SYSTEM
+
+- FONT SIZES (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-secondary;
+}
+
+.heading-secondary {
+  font-size: 2.2rem;
+  justify-self: center;
+  margin-bottom: 0.8rem;
+}

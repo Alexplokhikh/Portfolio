@@ -1,0 +1,15 @@
+.grid--8-col {
+  margin: 8rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2.4rem;
+  align-items: stretch; /* Ensures all grid items stretch to the same height */
+}
+
+.grid--3-col {
+  margin: 1rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  align-items: center; /* Ensures all grid items stretch to the same height */
+}

@@ -1,0 +1,60 @@
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 6.4rem 3.2rem;
+}
+
+.greet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 6.4rem;
+  color: #e4d5b7;
+
+  &-message {
+    line-height: 1.1;
+
+    @media (max-width: 630px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 5.2rem;
+  }
+}
+
+.alex {
+  font-size: 8.6rem;
+
+  @media (max-width: 1200px) {
+    font-size: 6.2rem;
+  }
+}
+
+.smaller {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media (max-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+.hello {
+  font-size: 9.6rem;
+  background-image: linear-gradient(#09fdf1, #012220);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @media (max-width: 1200px) {
+    font-size: 7.4rem;
+  }
+}

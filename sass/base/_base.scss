@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  // @include respond(tab-land) {
+  //   // width < 1200?
+  //   font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  // }
+
+  // @include respond(tab-port) {
+  //   // width < 900?
+  //   font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  // }
+
+  // @include respond(big-desktop) {
+  //   font-size: 75%; //1rem = 12, 12/16
+  // }
+}
+
+body {
+  background-color: #1d1d1d;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+
+  body::after {
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9a/512x512_Dissolve_Noise_Texture.png");
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    opacity: 0.5;
+    /* animation: animateGrain 8s steps(10) infinite; */
+    z-index: -100;
+  }
+}
+
+@keyframes animateGrain {
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, -20%);
+  }
+  30% {
+    transform: translate(-5%, -10%);
+  }
+  40% {
+    transform: translate(-15%, -20%);
+  }
+
+  50% {
+    transform: translate(-5%, -10%);
+  }
+  60% {
+    transform: translate(-15%, -20%);
+  }
+  70% {
+    transform: translate(-5%, -10%);
+  }
+  80% {
+    transform: translate(-15%, -20%);
+  }
+  90% {
+    transform: translate(-5%, -10%);
+  }
+  100% {
+    transform: translate(-15%, -20%);
+  }
+}
+
+// @include respond(tab-port) {
+//   padding: 0;
+// }
+
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  transform: translateZ(0);
+
+  &::before {
+    content: "";
+    top: -10rem;
+    left: -10rem;
+    width: calc(100% + 20rem);
+    height: calc(100% + 20rem);
+    z-index: -10;
+    position: fixed;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+    opacity: 0.1;
+    pointer-events: none;
+    -webkit-animation: noise 1s steps(2) infinite;
+    animation: noise 1s steps(2) infinite;
+  }
+}
+
+@-webkit-keyframes noise {
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
+
+@keyframes noise {
+  0% {
+    transform: translate3d(0, 9rem, 0);
+  }
+  10% {
+    transform: translate3d(-1rem, -4rem, 0);
+  }
+  20% {
+    transform: translate3d(-8rem, 2rem, 0);
+  }
+  30% {
+    transform: translate3d(9rem, -9rem, 0);
+  }
+  40% {
+    transform: translate3d(-2rem, 7rem, 0);
+  }
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+  60% {
+    transform: translate3d(2rem, 6rem, 0);
+  }
+  70% {
+    transform: translate3d(7rem, -8rem, 0);
+  }
+  80% {
+    transform: translate3d(-9rem, 1rem, 0);
+  }
+  90% {
+    transform: translate3d(6rem, -5rem, 0);
+  }
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background-color: $color-primary-light;
+  color: $color-black;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 1.5rem;
+
+  @media (max-width: 1400px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 1200px) {
+    max-width: 880px;
+  }
+
+  @media (max-width: 1200px) {
+    max-width: 820px;
+  }
+
+  @media (max-width: 960px) {
+    align-items: center;
+  }
+}
+
+.section {
+  display: block;
+  margin-bottom: 14rem;
+  transition: transform 1s, opacity 1s;
+
+  &--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+
+  &__home {
+    margin-top: 6rem;
+    margin-bottom: 30rem;
+  }
+
+  &__contact {
+    margin-bottom: 12rem;
+  }
+}
+
+.sm-mobile--hidden {
+  @media (max-width: 960px) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.nav-cta:link,
+.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border: 0.2rem solid $color-secondary;
+  border-radius: 50px;
+  color: $color-secondary;
+}
+
+.nav-cta:hover,
+.nav-cta:active {
+  border: 0.2rem solid $color-primary-light;
+  color: $color-primary-light;
+}
+
+.cta {
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.btn--cta {
+  font-size: 2rem;
+  background-color: transparent;
+  color: $color-secondary;
+  padding: 2rem 4rem;
+  border: 2px $color-secondary solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: $color-primary-light;
+    color: $color-primary-light;
+  }
+}
